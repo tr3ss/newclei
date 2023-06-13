@@ -89,7 +89,7 @@ func main() {
 		pr := prs[i]
 		files = getFiles(pr, token, cves)
 		for _, name := range files.Array() {
-			println(name.String())
+			fmt.Println(name.String())
 		}
 	}
 }
